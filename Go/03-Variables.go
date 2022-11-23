@@ -15,6 +15,9 @@
 // var - declaration and value assignment can be done seperatly
 // := - used only in functions, value assignment and declaration
 //      has to be done in the same line.
+//
+// Naming rules
+// - can only contain alpha-numeric characters and underscores
 
 package main
 
