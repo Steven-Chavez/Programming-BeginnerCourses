@@ -14,7 +14,6 @@ import "fmt"
 var first, last string = "John", "Wick"
 
 func main() {
-
 	// Print()
 	fmt.Print("----- Print() Output -----", "\n")
 	// Print() has no formatting (newline, space, etc.)
@@ -42,7 +41,6 @@ func main() {
 
 	// Printf()
 	fmt.Println("----- Printf() Output -----")
-
 	// Prints out the value of the variable
 	fmt.Printf("My first name is - %v", first)
 	fmt.Println()
