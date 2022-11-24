@@ -43,16 +43,15 @@ func main() {
 	// Printf()
 	fmt.Println("----- Printf() Output -----")
 
+	// Prints out the value of the variable
 	fmt.Printf("My first name is - %v", first)
-
 	fmt.Println()
 	fmt.Printf("My last name is - %v", last)
 
+	// Prints out the type of the variable
 	fmt.Println()
 	fmt.Printf("The variable first is type - %T", first)
-
 	fmt.Println()
 	fmt.Printf("The variable last is type - %T", last)
-
 	fmt.Println()
 }
