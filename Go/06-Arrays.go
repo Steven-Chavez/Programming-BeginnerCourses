@@ -26,6 +26,6 @@ func main() {
 	var array_specific = [5]int{0: 10, 4: 50}
 	fmt.Println(array_specific)
 
-	// Find the lenght of an array
+	// Find the length of an array
 	fmt.Println("Array Lenth:", len(array_specific))
 }
