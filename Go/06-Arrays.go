@@ -1,6 +1,10 @@
 // Author: Steven Chavez
 // FileName: 06-Arrays.go
 // Creation Date: 11/26/2022
+//
+// ARRAY SYNTAX
+// var array_name = [length]datatype{values} // here length is defined
+// var array_name = [...]datatype{values} // here length is inferred
 
 package main
 
