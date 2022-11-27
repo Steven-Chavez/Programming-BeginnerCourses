@@ -20,11 +20,11 @@ func main() {
 	// ARITHMETIC OPERATORS
 	// Used to perform math operations
 	//
-	// + Addition
-	// - Subtraction
-	// * Multiplcation
-	// / Division
-	// % Modulas
+	// +  Addition
+	// -  Subtraction
+	// *  Multiplcation
+	// /  Division
+	// %  Modulas
 	// ++ Increment
 	// -- Decrement
 
@@ -56,11 +56,25 @@ func main() {
 	//
 	// == Equals to "Are they the same"
 	// != Not equal
-	// > Greater than
-	// < Less than
+	// >  Greater than
+	// <  Less than
 	// >= Greater than or equal to
 	// <= Less than or equal to
 
 	fmt.Println(a == b) //0 - False
 	fmt.Println(a != b) //1 - True
+
+	//-------------------------------
+	// LOGICAL OPERATORS
+	// Used to determine the logic between values
+	//
+	// && Logical AND
+	// || Logical OR
+	// !  Logical NOT
+
+	// Requires both sides to be true
+	fmt.Println(a == 20 && a == 10) // false
+
+	// Either side needs to be true
+	fmt.Println(a == 20 || a == 10) // true
 }
