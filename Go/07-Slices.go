@@ -1,8 +1,8 @@
 // Author: Steven Chavez
-// FileName: 06-Arrays.go
+// FileName: 07-Slices.go
 // Creation Date: 11/26/2022
 //
-// DEF
+// SLICE DEF
 // Used to store multiple variables. Like an array
 // but it's lenth can grow and shrink
 //
