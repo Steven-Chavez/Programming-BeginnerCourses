@@ -1,1 +1,1 @@
-# BashScripting-BeginnerCourse
+# Programming-BeginnerCourse
