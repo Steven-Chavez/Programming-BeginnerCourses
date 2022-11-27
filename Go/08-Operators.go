@@ -3,7 +3,8 @@
 // Creation Date: 11/27/2022
 //
 // OPERATORS DEF
-// Used to perform operations on variables and values// like math, comparing, equals to, ect
+// Used to perform operations on variables and values
+// like math, comparing, equals to, ect
 
 package main
 
@@ -29,4 +30,19 @@ func main() {
 	fmt.Println(a + a)
 	fmt.Println((c + c) / 10)
 	fmt.Println(a * b)
+
+	// ASSIGNMENT OPERATORS
+	// Used to assign values to variables
+	//
+	// = Assigns value to variable
+	// +=, -=, *=, /=, %=, &=, |=, ^=, >>=, <<=
+
+	// Same as a = a + 10
+	a += 10
+	fmt.Println(a) // 20
+
+	// Same as a = a % 10
+	a %= 2
+	fmt.Println(a) // 0
+
 }
