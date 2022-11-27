@@ -16,6 +16,7 @@ func main() {
 	var b int = 50
 	var c int = 100
 
+	//-------------------------------
 	// ARITHMETIC OPERATORS
 	// Used to perform math operations
 	//
@@ -31,6 +32,7 @@ func main() {
 	fmt.Println((c + c) / 10)
 	fmt.Println(a * b)
 
+	//------------------------------
 	// ASSIGNMENT OPERATORS
 	// Used to assign values to variables
 	//
@@ -40,9 +42,25 @@ func main() {
 	// Same as a = a + 10
 	a += 10
 	fmt.Println(a) // 20
-
 	// Same as a = a % 10
 	a %= 2
 	fmt.Println(a) // 0
+	// Setting variable back to original value
+	a = 10
 
+	//------------------------------
+	// COMPARISON OPERATORS
+	// Used to compare two variables
+	//
+	// The return value is either true(1) or false(0)
+	//
+	// == Equals to "Are they the same"
+	// != Not equal
+	// > Greater than
+	// < Less than
+	// >= Greater than or equal to
+	// <= Less than or equal to
+
+	fmt.Println(a == b) //0 - False
+	fmt.Println(a != b) //1 - True
 }
