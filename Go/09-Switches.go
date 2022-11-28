@@ -6,7 +6,7 @@
 // Runs blocks of code based on matched values
 //
 // FORMAT
-// switch expression {
+// switch variable_with_data_you_want_to_compare {
 // case x:
 //    // code block
 // case y:
