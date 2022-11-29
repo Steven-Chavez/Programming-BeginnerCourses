@@ -18,6 +18,11 @@
 // for i:=0; i < 5; i++ {
 //    // code to be executed
 // }
+//
+// STATEMENTS
+// continue - Skip 1 loop iteration
+// break - Stop the loop
+// range - Used to iterate through an array
 
 package main
 
@@ -32,15 +37,23 @@ func main() {
 	}
 
 	// Print out evens from 1-20
-	fmt.Println("----- 1-20 evens -----")
-	for j := 0; j < 20; j++ {
-		var mod int
-		mod = j % 2
+	fmt.Println("----- 0-20 evens -----")
+	for j := 0; j <= 20; j++ {
+		var mod int = j % 2
 
-		if mod == 0 {
-			fmt.Println(j)
-		} else {
+		// logic to print our evens
+		if mod != 0 {
+			// used to skip a loop iteration
 			continue
 		}
+		fmt.Println(j)
 	}
+
+	// Iterate through an array using range
+	fmt.Println("----- a-e using range -----")
+	letters := [5]string{"a", "b", "c", "d", "e"}
+	for i, val := range letters {
+		fmt.Println(i, "-", val)
+	}
+
 }
