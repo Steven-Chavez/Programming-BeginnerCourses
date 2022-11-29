@@ -25,11 +25,22 @@ import "fmt"
 
 func main() {
 
-	var hello string = "Hello World!"
-
-	// Print out "Hello World" 10 times
+	// Print out 1-10
+	fmt.Println("----- 1-10 -----")
 	for i := 0; i < 10; i++ {
-		fmt.Println(hello)
+		fmt.Println(i + 1)
 	}
 
+	// Print out evens from 1-20
+	fmt.Println("----- 1-20 evens -----")
+	for j := 0; j < 20; j++ {
+		var mod int
+		mod = j % 2
+
+		if mod == 0 {
+			fmt.Println(j)
+		} else {
+			continue
+		}
+	}
 }
