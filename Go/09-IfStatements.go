@@ -19,5 +19,19 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("vim-go")
+	// variable
+	var input string
+
+	// print out menu
+	fmt.Print("\n", "Are you a robot (Y/N)? ")
+	fmt.Scanln(&input)
+
+	if input == "Y" {
+		fmt.Println("No robots allowed!!")
+	} else if input == "N" {
+		fmt.Println("You are allowed!!")
+	} else {
+		fmt.Println("Invalid input, goodbye!")
+	}
+
 }
