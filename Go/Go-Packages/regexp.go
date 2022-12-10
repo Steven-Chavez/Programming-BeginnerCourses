@@ -1,7 +1,24 @@
+// Author: Steven Chavez
+// FileName: regexp.go
+// Creation Date: 12/10/2022
+
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"regexp"
+)
 
 func main() {
-	fmt.Println("vim-go")
+	musComp := regexp.MustCompile("\\d")
+
+	ip := "10.0.0.0/2"
+
+	output := musComp.FindString(ip)
+
+	fmt.Println(output)
+
+	found, err := regexp.MatchString("\\d", ip)
+
+	fmt.Println(found, err)
 }
