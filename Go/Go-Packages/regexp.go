@@ -18,7 +18,7 @@ func main() {
 
 	fmt.Println(output)
 
-	found, err := regexp.MatchString("\\d", ip)
+	found, err := regexp.MatchString("^[\\d]{1,3}\\.[\\d]{1,3}\\.[\\d]{1,3}\\.[\\d]{1,3}\\/[\\d]{1,2}$", ip)
 
 	fmt.Println(found, err)
 }
