@@ -8,6 +8,7 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"json"
 )
 
 // Todo struct
@@ -51,6 +52,11 @@ func get(ip string) {
 	bodyString := string(bodyBytes)
 	fmt.Println("API Response as String:\n" + bodyString)
 
+	// Convert response body to Todo struct
+	var todoStruct Todo
+	json.Unmarshal(bodyBytes, &todoStruct)
+	fmt.Printf("API Response as struct %+v\n", todoStruct)*/
+	
 	/*
 		defer resp.Body.Close()
 		bodyBytes, _ := ioutil.ReadAll(resp.Body)
