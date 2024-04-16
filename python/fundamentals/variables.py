@@ -117,3 +117,44 @@ print(random.randrange(1,100))
 #############
 ## STRINGS ##
 #############
+# You can assign multiline strings by using three quotes """ or '''
+v = """ This is
+a multiline string
+variable
+"""
+# strings are arrays you can access the characters of a string using []
+v = "Python"
+print(v[0]) # print "P"
+
+# You can loop through characters in a string
+v = "Python"
+for c in v:
+  print(c) # prints each char in a new line
+
+# How to get the length of a string
+v = "Python"
+print(len(v)) # prints 6
+
+# You can check the string if phrases or characters are present
+v = "How are you?"
+if "are" in v:
+  print(v)
+
+# You can check if a keyword is not in a string
+v = "How are you?"
+if "Python" not in v:
+  print(v)
+
+# You can return a range of char in a string using slice syntax
+v = "Python"
+print(v[2:4]) # prints "th"
+
+# Slice from the start
+print(v[:2]) # prints "py"
+
+# Slice to the end
+print(v[2:]) # prints "thon"
+
+# Negative index slicing
+v = "Hello, World!"
+print(v[-5:-2]) # prints "orl"
