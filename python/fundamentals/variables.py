@@ -34,3 +34,41 @@ v = "Python"
 v = 0
 V = "Python"
 
+# Multiple work variable names
+pythonVariable = "Python"  # Camel Case
+PythonVariable = "Python"  # Pascal Case
+python_variable = "Python"  # Snake Case
+
+# Assign multiple values in one line
+a, b, c = "A", "B", "C"
+
+# Assign same value to multiple variables
+a = b = c = 0
+
+# Unpacking a collection
+v = ["A", "B", "C"]
+a, b, c = v
+# a contains "A"
+# b contains "B"
+# c contains "C"
+
+# Variables created outside of functions are known as global variables
+v = "Python"
+
+def printString():
+  print(v)
+  
+printString()
+
+# If you create a variable inside a function it can only be used in that 
+# function unless you use the global keyword to add it to the global scope
+def printString()
+  global v
+  v = "Python"
+
+printString()
+
+print(v)
+
+
+
