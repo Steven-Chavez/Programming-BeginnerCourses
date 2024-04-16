@@ -12,8 +12,9 @@ A variable can have a short name (like x and y) or a more descriptive name (age,
   - A variable name cannot be any of the Python keywords.
 """
 
-
-
+##############
+### BASICS ###
+##############
 # Variables can change types
 v = 0
 v = "Python"
@@ -52,6 +53,9 @@ a, b, c = v
 # b contains "B"
 # c contains "C"
 
+########################
+### GLOBAL VARIABLES ###
+########################
 # Variables created outside of functions are known as global variables
 v = "Python"
 
@@ -70,5 +74,17 @@ printString()
 
 print(v)
 
+# If you want to change a global variables value you need to use the global keyword
+v = "Python"
 
+def printString():
+  global v
+  v = "Python3"
+  
+printString()
 
+print(v)
+
+###############
+### NUMBERS ###
+###############
