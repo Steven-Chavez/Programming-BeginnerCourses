@@ -88,3 +88,32 @@ print(v)
 ###############
 ### NUMBERS ###
 ###############
+# There are three types of number types in Python - int, float, complex
+
+# int - is a whole number positive or negative with no decimals of unlimited length
+v = 1
+v = 83478628346981237462836487
+v = -329837
+
+# float - same as int but with decimals
+v = 1.0
+v = -1.83782397
+
+# floats - can be a scientific number using an "e" as shorthand for the power of 10
+v = 33e5
+
+# complex - written with "j" as the imaginary part
+v = 1+1j
+v = 5j
+
+# converting types
+v = 0
+v = float(v) # converts int to float
+
+# random numbers - use the random module
+import random
+print(random.randrange(1,100))
+
+#############
+## STRINGS ##
+#############
