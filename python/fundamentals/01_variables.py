@@ -2,6 +2,7 @@
 Author: Steven Chavez
 Filename: variables.py
 Date: 4/16/2024
+References: w3schools.com/python
 
 Variable Naming Convention
 A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:
