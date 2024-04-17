@@ -130,7 +130,15 @@ print(x is not y)  # Output: False
 ### Membership Operators ###
 ############################
 
+# in - checks to see if data is in another set of data
+v = "P"
+w = "Python"
+print(v in w) # equals True
 
+# not in - checks to see if data is not in another set of data
+v = "P"
+w = "Python"
+print(v not in w) # equals False
 
 
 
