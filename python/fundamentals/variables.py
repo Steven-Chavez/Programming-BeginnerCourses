@@ -144,7 +144,10 @@ if "are" in v:
 v = "How are you?"
 if "Python" not in v:
   print(v)
-
+  
+########################
+### String - Slicing ###
+########################
 # You can return a range of char in a string using slice syntax
 v = "Python"
 print(v[2:4]) # prints "th"
@@ -158,3 +161,36 @@ print(v[2:]) # prints "thon"
 # Negative index slicing
 v = "Hello, World!"
 print(v[-5:-2]) # prints "orl"
+
+#######################
+### String - Modify ###
+#######################
+# Turn the whole string to upper case letters
+v = "Python"
+print(v.upper())
+
+# Turn the whole string to lower case letters
+v = "Python"
+print(v.lower())
+
+# Remove white spaces
+v = " Python "
+print(v.strip()) # prints "Python" not " Python "
+
+# Replace char or phrase with another
+v = "Python"
+print(v.replace("Py", "Mara")) # prints "Marathon"
+
+# Split string into a list based on a separator
+v = "Python is awesome"
+print(v.split(" ")) # prints ['Python', 'is', 'awesome']
+
+##########################
+### String - F-Strings ###
+##########################
+
+# F-string was introduced in 3.6, add an f in front of string and {} to add the variable to it
+version = 3.6
+txt = f"Python {version}"
+print(txt)
+
