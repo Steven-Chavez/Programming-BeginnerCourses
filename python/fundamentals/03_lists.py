@@ -36,6 +36,35 @@ print(l[2:5]) # prints ['Viper', 'Boa', 'King Snake']
 
 # Similar to slicing you can leave either side empty to start from the beginning or end
 print(l[:2]) # prints ['Python', 'Cobra']
+print(l[4:]) # prints ['King Snake']
+print(l[-4:-1]) # you can also use negative indexing
+
+# Check if item exists in list
+if "Boa" in l:
+  print("Yes")
+
+##########################
+### Chant item in list ###
+##########################
+
+# Change the 3rd item using the index
+l[2] = "Corn Snake"
+print(l) # prints ['Python', 'Cobra', 'Corn Snake', 'Boa', 'King Snake']
+
+# Change a range of item values
+l[1:3] = ["Corn Snake", "Cobra"]
+print(l) # prints ['Python', 'Corn Snake', 'Cobra', 'Boa', 'King Snake']
+
+# If you add more items than you replace the items will be added in that place and the rest will be moved
+l[1:2] = ["Corn Snake", "Viper"]
+print(l) # prints ['Python', 'Corn Snake', 'Viper', 'Cobra', 'Boa', 'King Snake']
+
+# You can insert items without replacing existing values by using insert()
+l.insert(4, "Anaconda") # adds item in the 5 index
+print(l) # prints ['Python', 'Corn Snake', 'Viper', 'Cobra', 'Anaconda', 'Boa', 'King Snake']
+
+
+
 
 
 
