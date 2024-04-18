@@ -169,12 +169,12 @@ print(l) # prints ['Boa', 'Cobra', 'King Snake', 'Python', 'Viper']
 l.sort(reverse = True) 
 print(l) # prints ['Viper', 'Python', 'King Snake', 'Cobra', 'Boa']
 
-# by default sort() is case sensitive. Capital letters are sorted before lowercase
+# By default sort() is case sensitive. Capital letters are sorted before lowercase
 l = ["Python", "cobra", "viper", "Boa", "king snake"]
 l.sort()
 print(l) # prints ['Python', 'cobra', 'viper', 'Boa', 'king snake']
 
-# if you want a case-insensitive sort function, use str.lower as a key function
+# If you want a case-insensitive sort function, use str.lower as a key function
 l = ["Python", "cobra", "viper", "Boa", "king snake"]
 l.sort(key = str.lower)
 print(l) # prints ['Boa', 'cobra', 'king snake', 'Python', 'viper']
@@ -183,8 +183,58 @@ print(l) # prints ['Boa', 'cobra', 'king snake', 'Python', 'viper']
 l.reverse()
 print(l) # prints ['viper', 'Python', 'king snake', 'cobra', 'Boa']
 
+##################
+### Copy lists ###
+##################
+# You cannot copy a list simply by typing list2 = list1, because: list2 will 
+# only be a reference to list1, and changes made in list1 will automatically also be made in list2.
 
+# Copy a list using copy()
+l = ["Python", "Cobra", "Viper", "Boa", "King Snake"]
+c = l.copy()
+print(c) # prints ['Python', 'Cobra', 'Viper', 'Boa', 'King Snake']
 
+# You can also use the list() method to make a copy
+c = list(l)
+print(c) # prints ['Python', 'Cobra', 'Viper', 'Boa', 'King Snake']
+
+##################
+### Join Lists ###
+##################
+
+# Join lists using the concatenate (+) operator
+l1 = ["Python", "cobra", "viper"]
+l2 = ["Boa", "king snake"]
+l3 = l1 + l2
+print(l3) # prints ['Python', 'cobra', 'viper', 'Boa', 'king snake']
+
+# You can also append a list to another one by one
+for x in l2:
+  l1.append(x)
+print(l1) # prints ['Python', 'cobra', 'viper', 'Boa', 'king snake']
+
+# you can use the extend() method, where the purpose is to add elements from one list to another list
+l1 = ["Python", "cobra", "viper"]
+l2 = ["Boa", "king snake"]
+l1.extend(l2)
+print(l1) # prints ['Python', 'cobra', 'viper', 'Boa', 'king snake']
+
+####################
+### List Methods ###
+####################
+"""
+append() - Adds an element at the end of the list
+clear() - Removes all the elements from the list
+copy() - Returns a copy of the list
+count() - Returns the number of elements with the specified value
+extend() - Add the elements of a list (or any iterable), to the end of the current list
+index() - Returns the index of the first element with the specified value
+insert() - Adds an element at the specified position
+pop() - Removes the element at the specified position
+remove() - Removes the item with the specified value
+reverse() - Reverses the order of the list
+sort() - Sorts the list
+"""
 
 
 
