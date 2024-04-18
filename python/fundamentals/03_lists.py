@@ -43,9 +43,9 @@ print(l[-4:-1]) # you can also use negative indexing
 if "Boa" in l:
   print("Yes")
 
-##########################
-### Chant item in list ###
-##########################
+###########################
+### Change item in list ###
+###########################
 
 # Change the 3rd item using the index
 l[2] = "Corn Snake"
@@ -63,8 +63,53 @@ print(l) # prints ['Python', 'Corn Snake', 'Viper', 'Cobra', 'Boa', 'King Snake'
 l.insert(4, "Anaconda") # adds item in the 5 index
 print(l) # prints ['Python', 'Corn Snake', 'Viper', 'Cobra', 'Anaconda', 'Boa', 'King Snake']
 
+#########################
+### Add items to list ###
+#########################
 
+# append items to list using append()
+l.append("Hognose Snake") 
+print(l) # prints ['Python', 'Corn Snake', 'Viper', 'Cobra', 'Anaconda', 'Boa', 'King Snake', 'Hognose Snake']
 
+# append list to list using extend()
+v = ["Rattle Snake", "Black Mamba"]
+l.extend(v)
+print(l) # prints ['Python', 'Corn Snake', 'Viper', 'Cobra', 'Anaconda', 'Boa', 'King Snake', 'Hognose Snake', 'Rattle Snake', 'Black Mamba']
+
+# You can use extend to add other iterable objects like tuples, sets, dictionaries, etc.
+l = ["Python", "Cobra", "Viper", "Boa", "King Snake"]
+t = ("Bull Snake", "Gopher Snake") # tuple
+l.extend(t)
+print(l) # prints ['Python', 'Cobra', 'Viper', 'Boa', 'King Snake', 'Bull Snake', 'Gopher Snake']
+
+##############################
+### Remove items from list ###
+##############################
+
+# Use remove() to remove items from the list. If there are duplicates the first occurrence will be removed
+l.remove("Cobra")
+print(l) # prints ['Python', 'Viper', 'Boa', 'King Snake', 'Bull Snake', 'Gopher Snake']
+
+# Use pop() to remove a specific index from the list
+l.pop(2)
+print(l) # prints ['Python', 'Viper', 'King Snake', 'Bull Snake', 'Gopher Snake']
+
+# If you don't provide an index for pop() the last item is removed
+l.pop()
+print(l) # prints ['Python', 'Viper', 'King Snake', 'Bull Snake']
+
+# del keyword can also be used to remove a specified index
+del l[1]
+print(l) # prints ['Python', 'King Snake', 'Bull Snake']
+
+# The del keyword can delete an entire list
+del l
+print(l) # prints NameError: name 'l' is not defined
+
+# Empty a list using clear(). list still remains
+l = ["Python", "Cobra", "Viper", "Boa", "King Snake"]
+l.clear()
+print(l) # prints []
 
 
 
