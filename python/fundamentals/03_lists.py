@@ -106,10 +106,38 @@ print(l) # prints ['Python', 'King Snake', 'Bull Snake']
 del l
 print(l) # prints NameError: name 'l' is not defined
 
-# Empty a list using clear(). list still remains
+# Empty a list using clear(). list remains
 l = ["Python", "Cobra", "Viper", "Boa", "King Snake"]
 l.clear()
 print(l) # prints []
+
+##################
+### Loop Lists ###
+##################
+
+# Loop through list using for loop
+l = ["Python", "Cobra", "Viper", "Boa", "King Snake"]
+for x in l:
+  print(x) # prints each item on a new line
+
+# You can loop through a list using indexes using range() and len()
+for i in range(len(l)):
+  print(l[i]) # prints each item on a new line
+
+# Loop through list using a while loop
+i = 0
+while i < len(l):
+  print(l[i]) # prints each item on a new line
+  i += 1
+ 
+# Loop through list using list comprehension
+[print(x) for x in l] # prints each item on a new line
+
+
+
+
+
+
 
 
 
