@@ -133,8 +133,55 @@ while i < len(l):
 # Loop through list using list comprehension
 [print(x) for x in l] # prints each item on a new line
 
+##########################
+### List Comprehension ###
+##########################
 
+# List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
+# Syntax: newlist = [expression for item in iterable if condition == True]
+l = ["Python", "Cobra", "Viper", "Boa", "King Snake"]
+n = [x for x in l if "n" in x] 
+print(n) # prints ['Python', 'King Snake']
 
+# The condition is optional
+n = [x for x in l]
+print(n) # prints an exact copy of l
+
+# The expression is the current item in the iteration, but it is also the outcome, which you 
+# can manipulate before it ends up like a list item in the new list:
+n = [x.lower() for x in l]
+print(n) # prints ['python', 'cobra', 'viper', 'boa', 'king snake']
+
+# The expression can also contain conditions, not like a filter, but as a way to manipulate the outcome:
+n = [x if x != "Boa" else "Boa Constrictor" for x in l]
+print(n) # prints ['Python', 'Cobra', 'Viper', 'Boa Constrictor', 'King Snake']
+
+##################
+### Sort Lists ###
+##################
+
+# sort lists alphanumerically
+l = ["Python", "Cobra", "Viper", "Boa", "King Snake"]
+l.sort()
+print(l) # prints ['Boa', 'Cobra', 'King Snake', 'Python', 'Viper']
+
+# sort descending
+l.sort(reverse = True) 
+print(l) # prints ['Viper', 'Python', 'King Snake', 'Cobra', 'Boa']
+
+# by default sort() is case sensitive. Capital letters are sorted before lowercase
+l = ["Python", "cobra", "viper", "Boa", "king snake"]
+l.sort()
+print(l) # prints ['Python', 'cobra', 'viper', 'Boa', 'king snake']
+
+# if you want a case-insensitive sort function, use str.lower as a key function
+l = ["Python", "cobra", "viper", "Boa", "king snake"]
+l.sort(key = str.lower)
+print(l) # prints ['Boa', 'cobra', 'king snake', 'Python', 'viper']
+
+# You can use the reverse() method to reverse the current order of the list
+l.reverse()
+print(l) # prints ['viper', 'Python', 'king snake', 'cobra', 'Boa']
 
 
 
