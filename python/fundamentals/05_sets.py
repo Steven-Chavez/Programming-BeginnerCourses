@@ -81,6 +81,8 @@ l = ["Spinach", "Kale"]
 s.update(l)
 print(s) # prints {'Spinach', 'Kale', 'Tomatoes', 'Peppers'}
 
+# Next section https://www.w3schools.com/python/python_sets_loop.asp
+
 
 ########################
 ### Remove Set Items ###
