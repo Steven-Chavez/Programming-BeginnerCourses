@@ -86,10 +86,25 @@ print(s) # prints {'Spinach', 'Kale', 'Tomatoes', 'Peppers'}
 ### Remove Set Items ###
 ########################
 
-# To remove an item in a set, use the remove(), or the discard() method.
+# To remove an item in a set, use the remove(), or the discard() method. If an item does not exist
+# discard() will not raise an error
 s = {"Tomatoes", "Peppers", "Kale", "Spinach"}
+s.remove("Kale")
+print(s) # prints {'Spinach', 'Tomatoes', 'Peppers'}
 
+# Sets are unordered, so when using the pop() method, you do not know which item that gets removed.
+s = {"Tomatoes", "Peppers", "Kale", "Spinach"}
+s.pop()
+print(s) # prints {'Kale', 'Tomatoes', 'Peppers'}
 
+# Use the clear() method to empty a set
+s = {"Tomatoes", "Peppers", "Kale", "Spinach"}
+s.clear()
+print(s) # prints set()
 
+# Use the del keyword to delete the set completely
+s = {"Tomatoes", "Peppers", "Kale", "Spinach"}
+del s
+print(s) # prints error
 
 
