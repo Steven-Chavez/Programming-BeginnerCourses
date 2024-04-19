@@ -56,3 +56,93 @@ l = list(t)
 l.append("Piccolo")
 t = tuple(l)
 print(t) # prints ('Goku', 'Gohan', 'Vegeta', 'Piccolo')
+
+# You can add Tuples to Tuples
+t = ("Goku", "Gohan", "Vegeta")
+t2 = ("Piccolo",)
+t += t2
+print(t) # prints ('Goku', 'Gohan', 'Vegeta', 'Piccolo')
+
+# To remove items from a tuple you have to use the same method to add to a tuple
+t = ("Goku", "Gohan", "Vegeta")
+l = list(t)
+l.remove("Gohan")
+t = tuple(l)
+print(t) # prints ('Goku', 'Vegeta')
+
+# You can use del to delete the tuple completely
+del t
+print(t) # prints error
+
+########################
+### Unpacking Tuples ###
+########################
+
+# Packing a tuple
+t = ("Goku", "Gohan", "Vegeta")
+
+# You extract values back to variables - called unpacking
+(dbz1, dbz2, dbz3) = t
+print(dbz1) # prints Goku
+print(dbz2) # prints Gohan
+print(dbz3) # prints Vegeta
+
+# If the number of variables is less than the number of values, you can add an * 
+# to the variable name and the values will be assigned to the variable as a list:
+t = ("Goku", "Gohan", "Vegeta")
+(dbz1, *dbz2) = t
+print(dbz1) # prints Goku
+print(dbz2) # prints ['Gohan', 'Vegeta']
+
+
+###################
+### Loop Tuples ###
+###################
+
+# You can loop through Tuples the same you loop through lists
+# - for loop
+# - while loop
+# - loop through index for i in range(len(t)):
+
+
+###################
+### Join Tuples ###
+###################
+
+# You can use the + operator to join two or more Tuples
+t1 = ("Goku", "Gohan")
+t2 = ("Piccolo", "Vegeta")
+
+t3 = t1 + t2
+print(t3) # prints ('Goku', 'Gohan', 'Piccolo', 'Vegeta')
+
+# You can multiply the contents of Tuples
+t = ("Goku", "Gohan")
+t = t * 4
+print(t) # prints ('Goku', 'Gohan', 'Goku', 'Gohan', 'Goku', 'Gohan', 'Goku', 'Gohan')
+
+
+#####################
+### Tuple Methods ###
+#####################
+
+"""
+Python has two built-in methods that you can use on tuples.
+
+count() - Returns the number of times a specified value occurs in a tuple
+index()	- Searches the tuple for a specified value and returns the position of where it was found
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
