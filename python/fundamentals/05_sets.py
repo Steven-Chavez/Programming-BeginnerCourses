@@ -40,5 +40,56 @@ s = {"Tomatoes", "Peppers", "Kale", True, 1, 2}
 print(type(s)) # prints <class 'set'>
 
 
+########################
+### Access Set items ###
+########################
+
+# You cannot access items in a set by referring to an index or a key.
+# But you can loop through the set items using a for loop, or ask if a specified
+# value is present in a set, by using the in keyword.
+s = {"Tomatoes", "Peppers", "Kale"}
+for i in s:
+  print(i) # prints each item on a new line
+
+# Check if an item is present in a set
+print("Kale" in s) # prints True
+
+# Check if an item is not present in a set
+print("Kale" not in s) # prints False
+
+# Once a set is created, you cannot change its items, but you can add new items.
+
+
+#####################
+### Add Set Items ###
+#####################
+
+# To add one item to a set use the add() method.
+s = {"Tomatoes", "Peppers", "Kale"}
+s.add("Spinach")
+print(s) # prints {'Spinach', 'Kale', 'Tomatoes', 'Peppers'}
+
+# To add items from another set into the current set, use the update() method.
+s1 = {"Tomatoes", "Peppers"}
+s2 = {"Spinach", "Kale"}
+s1.update(s2)
+print(s1) # prints {'Spinach', 'Kale', 'Tomatoes', 'Peppers'}
+
+# The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).
+s = {"Tomatoes", "Peppers"}
+l = ["Spinach", "Kale"]
+s.update(l)
+print(s) # prints {'Spinach', 'Kale', 'Tomatoes', 'Peppers'}
+
+
+########################
+### Remove Set Items ###
+########################
+
+# To remove an item in a set, use the remove(), or the discard() method.
+s = {"Tomatoes", "Peppers", "Kale", "Spinach"}
+
+
+
 
 
