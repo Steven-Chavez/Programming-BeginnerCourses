@@ -26,3 +26,33 @@ print(t) # prints ('Goku', 'Gohan', 'Vegeta', 'Gohan')
 # To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.
 t = ("Goku",)
 print(t) # prints ('Goku',)
+
+# Tuples can be any data type or contain different data types in the same Tuple
+t = ("Goku", 3000, True)
+print(t) # print ('Goku', 3000, True)
+
+# Tuples are defined objects with the data type of tuple
+print(type(t)) # prints <class 'tuple'>
+
+
+#####################
+### Access Tuples ###
+#####################
+# You can access tuples the same way you access lists
+# - Index in side square brackets t[1]
+# - Negative indexing [-1]
+# - Range of indexes [2:4]
+# - Range of negative indexes [-4:-1]
+# - Check if item exists using in
+
+
+#####################
+### Update Tuples ###
+#####################
+
+# Tuples are unchangeable but there is a workaround. Change the tuple into a list and back into a tuple
+t = ("Goku", "Gohan", "Vegeta")
+l = list(t)
+l.append("Piccolo")
+t = tuple(l)
+print(t) # prints ('Goku', 'Gohan', 'Vegeta', 'Piccolo')
