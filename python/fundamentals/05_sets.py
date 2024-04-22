@@ -109,4 +109,31 @@ s = {"Tomatoes", "Peppers", "Kale", "Spinach"}
 del s
 print(s) # prints error
 
+#################
+### Loop Sets ###
+#################
+# You can loop through the set items by using a for loop
+s = {"Tomatoes", "Peppers", "Kale", "Spinach"}
+
+for i in s:
+  print(i) # prints each item on a new line
+
+#################
+### Join Sets ###
+#################
+'''
+There are several ways to join two or more sets in Python.
+
+The union() and update() methods joins all items from both sets.
+The intersection() method keeps ONLY the duplicates.
+The difference() method keeps the items from the first set that are not in the other set(s).
+The symmetric_difference() method keeps all items EXCEPT the duplicates.
+'''
+
+# The union() method returns a new set with all items from both sets
+s1 = {"Tomatoes", "Peppers"}
+s2 = { "Kale", "Spinach"}
+s3 = s1.union(s2)
+print(s3) # prints {'Peppers', 'Spinach', 'Kale', 'Tomatoes'}
+
 
