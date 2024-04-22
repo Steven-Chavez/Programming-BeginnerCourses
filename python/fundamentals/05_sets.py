@@ -136,4 +136,35 @@ s2 = { "Kale", "Spinach"}
 s3 = s1.union(s2)
 print(s3) # prints {'Peppers', 'Spinach', 'Kale', 'Tomatoes'}
 
+# You can use the | operator instead of the union() method, and you will get the same result.
+s1 = {"Tomatoes", "Peppers"}
+s2 = { "Kale", "Spinach"}
+s3 = s1 | s2
+print(s3) # prints {'Peppers', 'Spinach', 'Kale', 'Tomatoes'}
+
+# The update() method inserts the items in s2 into s1
+s1 = {"Tomatoes", "Peppers"}
+s2 = { "Kale", "Spinach"}
+s1.update(s2)
+print(s1) # prints {'Peppers', 'Spinach', 'Kale', 'Tomatoes'}
+
+# The intersection() method will return a new set, that only contains the items that are present in both sets.
+s1 = {"Tomatoes", "Kale"}
+s2 = { "Kale", "Spinach"}
+s3 = s1.intersection(s2)
+print(s3) # prints {'Kale'}
+
+# You can use the & operator instead of the intersection() method, and you will get the same result.
+s1 = {"Tomatoes", "Kale"}
+s2 = { "Kale", "Spinach"}
+s3 = s1 & s2
+print(s3) # prints {'Kale'}
+
+# The intersection_update() method will also keep ONLY the duplicates, but it will change the original set instead of returning a new set.
+# The values True and 1 are considered the same value. The same goes for False and 0.
+s1 = {"Tomatoes", "Kale"}
+s2 = { "Kale", "Spinach"}
+s1.intersection_update(s2)
+print(s2) # prints {'Kale', 'Spinach'}
+
 
