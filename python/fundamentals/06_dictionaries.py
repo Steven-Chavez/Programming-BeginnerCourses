@@ -142,6 +142,45 @@ d.update({"color": "Black/Stainless"})
 print(d) # prints {'brand': 'Cold Steel', 'model': 'SRK', 'type': 'knife', 'color': 'Black/Stainless'}
 
 
+####################
+### Remove Items ###
+####################
+
+# The pop() method removes the item with the specified key name
+d = {
+  "brand": "Cold Steel",
+  "model": "SRK",
+  "type": "knife"
+}
+d.pop("model")
+print(d) # prints {'brand': 'Cold Steel', 'type': 'knife'}
+
+# The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead):
+d = {
+  "brand": "Cold Steel",
+  "model": "SRK",
+  "type": "knife"
+}
+d.popitem()
+print(d) # prints {'brand': 'Cold Steel', 'model': 'SRK'}
+
+# The del keyword removes the item with the specified key name
+d = {
+  "brand": "Cold Steel",
+  "model": "SRK",
+  "type": "knife"
+}
+del d["type"]
+print(d) # prints {'brand': 'Cold Steel', 'model': 'SRK'}
+
+# The clear() method empties the dictionary
+d = {
+  "brand": "Cold Steel",
+  "model": "SRK",
+  "type": "knife"
+}
+d.clear()
+print(d) # prints {}
 
 
 
