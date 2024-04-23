@@ -183,6 +183,119 @@ d.clear()
 print(d) # prints {}
 
 
+#########################
+### Loop Dictionaries ###
+#########################
+
+# Print all key names in the dictionary, one by one
+d = {
+  "brand": "Cold Steel",
+  "model": "SRK",
+  "type": "knife"
+}
+for i in d:
+  print(i) # prints each key on a new line
+
+# Print all values in the dictionary, one by one
+for i in d:
+  print(d[i]) # prints each value on a new line
+
+# You can also use the values() method to return values of a dictionary:
+for i in d.values():
+  print(i) # prints each value on a new line
+
+# You can use the keys() method to return the keys of a dictionary
+for i in d.keys():
+  print(i) # prints each key on a new line
+
+# Loop through both keys and values, by using the items() method:
+for k, v in d.items():
+  print(k, v) # prints each key/value pair on a new line
+
+
+#########################
+### Copy Dictionaries ###
+#########################
+
+# You cannot copy a dictionary simply by typing dict2 = dict1, because: dict2 will only be a 
+# reference to dict1, and changes made in dict1 will automatically also be made in dict2.
+# There are ways to make a copy, one way is to use the built-in Dictionary method copy().
+
+# Make a copy of a dictionary with the copy() method:
+d = {
+  "brand": "Cold Steel",
+  "model": "SRK",
+  "type": "knife"
+}
+c = d.copy()
+print(c) # print {'brand': 'Cold Steel', 'model': 'SRK', 'type': 'knife'}
+
+# Make a copy of a dictionary with the dict() function
+c = dict(d)
+print(c)  # print {'brand': 'Cold Steel', 'model': 'SRK', 'type': 'knife'}
+
+
+###########################
+### Nested Dictionaries ###
+###########################
+# A dictionary can contain dictionaries, this is called nested dictionaries.
+
+# Create a dictionary that contain three dictionaries:
+nd = {
+  "item1": {
+    "brand": "Cold Steel",
+    "model": "SRK",
+    "type": "knife"
+  },
+  "item2": {
+    "brand": "Cold Steel",
+    "model": "AD-15 Lite",
+    "type": "knife"
+  },
+  "item3": {
+    "brand": "Cold Steel",
+    "model": "Demko Hawk",
+    "type": "Hatchet"
+  }
+}
+print(nd) # prints {'item1': {'brand': 'Cold Steel', 'model': 'SRK', 'type': 'knife'}, 'item2': {'brand': 'Cold Steel', 'model': 'AD-15 Lite', 'type': 'knife'}, 'item3': {'brand': 'Cold Steel', 'model': 'Demko Hawk', 'type': 'Hatchet'}}
+
+# Create three dictionaries, then create one dictionary that will contain the other three dictionaries:
+item1 = {
+  "brand": "Cold Steel",
+  "model": "SRK",
+  "type": "knife"
+}
+item2 = {
+  "brand": "Cold Steel",
+  "model": "AD-15 Lite",
+  "type": "knife"
+} 
+item3 = {
+  "brand": "Cold Steel",
+  "model": "Demko Hawk",
+  "type": "Hatchet"
+}
+nd = {
+  "item1": item1,
+  "item2": item2,
+  "item3": item3
+}
+print(nd) # prints {'item1': {'brand': 'Cold Steel', 'model': 'SRK', 'type': 'knife'}, 'item2': {'brand': 'Cold Steel', 'model': 'AD-15 Lite', 'type': 'knife'}, 'item3': {'brand': 'Cold Steel', 'model': 'Demko Hawk', 'type': 'Hatchet'}}
+
+# To access items from a nested dictionary, you use the name of the dictionaries, starting with the outer dictionary
+print(nd["item3"]["model"]) # prints Demko Hawk
+
+
+
+
+
+
+
+
+
+
+
 
 
 
