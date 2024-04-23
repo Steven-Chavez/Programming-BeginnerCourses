@@ -40,6 +40,7 @@ d = {
 }
 print(d) # print {'brand': 'Cold Steel', 'model': 'SRK', 'type': 'knife'}
 
+
 ####################
 ### Access Items ###
 ####################
@@ -77,6 +78,55 @@ print(i) # prints dict_keys(['brand', 'model', 'type', 'color'])
 # The values() method will return a list of all the values in the dictionary.
 i = d.values()
 print(i) # prints dict_values(['Cold Steel', 'SRK', 'knife', 'black'])
+
+# The items() method will return each item in a dictionary, as tuples in a list.
+i = d.items()
+print(i) # prints dict_items([('brand', 'Cold Steel'), ('model', 'SRK'), ('type', 'knife'), ('color', 'black')])
+
+# To determine if a specified key is present in a dictionary use the in keyword:
+d = {
+  "brand": "Cold Steel",
+  "model": "SRK",
+  "type": "knife"
+}
+
+if "model" in d:
+  print("Yes, 'model' is a key in the dictionary") # prints Yes, 'model' is a key in the dictionary
+
+
+####################
+### Change Items ###
+####################
+
+# You can change the value of a specific item by referring to its key name
+d = {
+  "brand": "Cold Steel",
+  "model": "SRK",
+  "type": "knife"
+}
+d["model"] = "AD-15 Lite"
+print(d) # prints {'brand': 'Cold Steel', 'model': 'AD-15 Lite', 'type': 'knife'}
+
+# The update() method will update the dictionary with the items from the given argument.
+#The argument must be a dictionary, or an iterable object with key:value pairs.
+d = {
+  "brand": "Cold Steel",
+  "model": "SRK",
+  "type": "knife"
+}
+d.update({"model": "AD-15 Lite"})
+print(d) # prints {'brand': 'Cold Steel', 'model': 'AD-15 Lite', 'type': 'knife'}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
