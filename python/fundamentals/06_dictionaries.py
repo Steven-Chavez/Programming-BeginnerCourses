@@ -1,6 +1,6 @@
 """
 Author: Steven Chavez
-Filename: 03_lists.py
+Filename: 06_dictionaries.py
 Date: 4/17/2024
 References: w3schools.com/python
 
