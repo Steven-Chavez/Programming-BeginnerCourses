@@ -45,6 +45,11 @@ elif x == y:
 else:
   print("x is less than y") # prints x is less than y
 
+
+##############################
+### One Line If Statements ###
+##############################
+
 # One line if statement
 x = 0
 y = 20
@@ -67,3 +72,75 @@ print("x is greater than y") if x > y else print("x is the same as y") if x == y
 x = 20
 y = 10
 print("x is greater than y") if x > y else print("x is the same as y") if x == y else print("x is less than y") # prints x is greater than y
+
+
+####################
+### And Operator ###
+####################
+
+# The and keyword is a logical operator, and is used to combine conditional statements
+x = 100
+y = 50
+z = 300
+
+if x > y and z > x:
+  print("Both conditions are True") # prints Both conditions are True
+
+
+###################
+### Or Operator ###
+###################
+
+# The or keyword is a logical operator, and is used to combine conditional statements
+x = 100
+y = 50
+z = 300
+
+if x == y or y < z:
+  print("At least one of the conditions is True") # prints At least one of the conditions is True
+
+
+####################
+### Not Operator ###
+####################
+
+# The not keyword is a logical operator, and is used to reverse the result of the conditional statement
+x = 100
+y = 50
+
+if not x < y:
+  print("x is NOT less than y") # prints x is NOT less than y
+
+  
+#################
+### Nested if ###
+#################
+
+# You can have if statements inside if statements, this is called nested if statements
+x = 33
+
+if x > 5:
+  print("Above 5") # prints Above 5
+  if x > 50:
+    print("Above 10") # condition is not True
+  else:
+    print("Not above 50") # prints Not above 50
+
+    
+######################
+### Pass Statement ###
+######################
+
+"""
+if statements cannot be empty, but if you for some reason have an if statement with no content, 
+put in the pass statement to avoid getting an error.
+
+The pass statement is often used during development as a placeholder before implementing the actual functionality, allowing the code to be syntactically correct without doing anything.
+"""
+x = 100
+y = 50
+
+if x < y:
+    pass  # Placeholder for future code
+else:
+    print("Condition is False") # prints Condition is False
