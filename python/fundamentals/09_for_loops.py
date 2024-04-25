@@ -63,7 +63,6 @@ To loop through a set of code a specified number of times, we can use the range(
 The range() function returns a sequence of numbers, starting from 0 by default, and increments 
 by 1 (by default), and ends at a specified number.
 """
-
 # Using the range() function
 for i in range(10):
   print(i) # prints 0-9 on new lines
@@ -83,6 +82,48 @@ increment value by adding a third parameter: range(2, 30, 3)
 # Increment the sequence with 2 (default is 1)
 for i in range(10, 20, 2):
   print(i) # prints 10, 12, 14, 16, and  18 on new lines
+
+
+########################
+### Else in For Loop ###
+########################
+
+"""
+The else keyword in a for loop specifies a block of code to be executed when the loop is finished
+"""
+# Print all numbers from 0 to 5, and print a message when the loop has ended
+for i in range(10):
+  print(i) # prints 0-9 on a new line
+else:
+  print("Loop has finished")
+
+
+# The else block will NOT be executed if the loop is stopped by a break statement
+for i in range(10):
+  if i == 5: break
+  print(i) # prints 0-4 on a new line
+else:
+  print("Loop has finished") # does not print because of the break statement
+
+
+####################
+### Nested Loops ###
+####################
+
+"""
+A nested loop is a loop inside a loop.
+The "inner loop" will be executed one time for each iteration of the "outer loop"
+"""
+# print each number for every languauge
+l = ["C++", "Python", "C#"]
+t = [1, 2, 3]
+
+for i in t:
+  for j in l:
+    print(i, j)
+
+
+
 
 
 
