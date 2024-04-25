@@ -123,10 +123,17 @@ for i in t:
     print(i, j)
 
 
+######################
+### Pass Statement ###
+######################
 
-
-
-
+"""
+for loops cannot be empty, but if you for some reason have a for loop with no content, 
+put in the pass statement to avoid getting an error
+"""
+l = ["C++", "Python", "C#"]
+for i in l:
+  pass # No errors 
 
 
 
