@@ -23,4 +23,41 @@ s = "Who's going to carry the boats!!!"
 for c in s:
   print(c) # prints each character on a new line
 
+
+#######################
+### Break Statement ###
+#######################
+
 # With the break statement we can stop the loop before it has looped through all the items
+for i in l:
+  print(i)
+  if i == "Python":
+    break # because of the break the loop only prints C++ and Python on a new line
+
+# Exit the loop when x is "banana", but this time the break comes before the print
+l = ["C++", "Python", "C#"]
+for i in l:
+  if i == "Python":
+    break
+  print(i) # prints only C++
+
+
+##########################
+### Continue Statement ###
+##########################
+
+# With the continue statement we can stop the current iteration of the loop, and continue with the next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
