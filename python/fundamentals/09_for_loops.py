@@ -47,7 +47,42 @@ for i in l:
 ##########################
 
 # With the continue statement we can stop the current iteration of the loop, and continue with the next
+l = ["C++", "Python", "C#"]
+for i in l:
+  if i == "Python":
+    continue
+  print(i) # prints everything but Python
 
+
+########################
+### range() Function ###
+########################
+
+"""
+To loop through a set of code a specified number of times, we can use the range() function,
+The range() function returns a sequence of numbers, starting from 0 by default, and increments 
+by 1 (by default), and ends at a specified number.
+"""
+
+# Using the range() function
+for i in range(10):
+  print(i) # prints 0-9 on new lines
+
+"""
+The range() function defaults to 0 as a starting value, however, it is possible to specify 
+the starting value by adding a parameter: range(2, 6), which means values from 2 to 6 (but not including 6)
+"""
+# Using the start parameter
+for i in range(5, 10):
+  print(i) # prints 5-9 on new lines
+
+"""
+The range() function defaults to increment the sequence by 1, however, it is possible to specify the 
+increment value by adding a third parameter: range(2, 30, 3)
+"""
+# Increment the sequence with 2 (default is 1)
+for i in range(10, 20, 2):
+  print(i) # prints 10, 12, 14, 16, and  18 on new lines
 
 
 
